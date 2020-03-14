@@ -86,3 +86,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+#Pasta de arquivos do npm
+.node_modules/
