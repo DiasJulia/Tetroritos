@@ -1,7 +1,8 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useLayoutEffect, useCallback} from 'react';
 import {createStage} from '../gameHelpers';
 
-export const useStage =(player, resetPlayer) => {
+
+export const useStage = (player, resetPlayer) => {
     const [stage, setStage] = useState(createStage());
 
     useEffect(()=>{
@@ -21,11 +22,17 @@ export const useStage =(player, resetPlayer) => {
                   }
                 });
               });
+              //Verificar colisões
+              if(player.collided) {
+                resetPlayer();
+              }
               return newStage;
             };
 
-        setStage(prev => updateStage(prev))
-    }, [ player])
+        setStage(prev => updateStage(prev));
+
+    }, [ player,
+    resetPlayer,])
 
     return[stage, setStage]
 }
