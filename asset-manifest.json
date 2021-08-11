@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tetroritos/static/css/main.b505370d.chunk.css",
+    "main.js": "/tetroritos/static/js/main.90cd7794.chunk.js",
+    "main.js.map": "/tetroritos/static/js/main.90cd7794.chunk.js.map",
+    "runtime-main.js": "/tetroritos/static/js/runtime-main.4bace3ec.js",
+    "runtime-main.js.map": "/tetroritos/static/js/runtime-main.4bace3ec.js.map",
+    "static/js/2.18d6e5c4.chunk.js": "/tetroritos/static/js/2.18d6e5c4.chunk.js",
+    "static/js/2.18d6e5c4.chunk.js.map": "/tetroritos/static/js/2.18d6e5c4.chunk.js.map",
+    "index.html": "/tetroritos/index.html",
+    "precache-manifest.ac07a39c69c54c6cd07821fb34f7e1aa.js": "/tetroritos/precache-manifest.ac07a39c69c54c6cd07821fb34f7e1aa.js",
+    "service-worker.js": "/tetroritos/service-worker.js",
+    "static/css/main.b505370d.chunk.css.map": "/tetroritos/static/css/main.b505370d.chunk.css.map",
+    "static/js/2.18d6e5c4.chunk.js.LICENSE.txt": "/tetroritos/static/js/2.18d6e5c4.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/tetroritos/static/media/Pixel-LCD-7.e2897552.woff",
+    "static/media/bg.png": "/tetroritos/static/media/bg.2810fe6b.png",
+    "static/media/logo.svg": "/tetroritos/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bace3ec.js",
+    "static/js/2.18d6e5c4.chunk.js",
+    "static/css/main.b505370d.chunk.css",
+    "static/js/main.90cd7794.chunk.js"
+  ]
+}
