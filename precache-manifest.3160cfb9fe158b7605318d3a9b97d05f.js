@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0230e2b3fd6de5433f45cb45ac1cbea1",
+    "revision": "cf0e5dd620428d054a66e2f2c3dc72bb",
     "url": "/Tetroritos/index.html"
   },
   {
