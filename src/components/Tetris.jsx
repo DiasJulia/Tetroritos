@@ -104,11 +104,12 @@ const Tetris = () => {
         onKeyUp={keyUp}>
             <StyledTetris>
                 <Stage stage={stage} />
-                <aside>
+                <aside className='aside'>
                     {gameOver ? (
                         <div>
                         <Display gameOver={gameOver} text="game Over" />
                         <Display gameOver={gameOver} text="Mais sorte da próxima vez" />
+                        <Display text={`Score ${score}`} />
                         </div>
                     ) : (
                             <div>

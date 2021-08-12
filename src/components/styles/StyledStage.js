@@ -12,4 +12,16 @@ export const StyledStage = styled.div`
   width: 100%;
   max-width: 25vw;
   background: #111;
+
+  @media(max-width: 930px){
+    max-width: 90vw;
+    max-height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    grid-template-rows: repeat(
+      ${props => props.height},
+      calc(50vw / ${props => props.width})
+    );
+  }
 `;
