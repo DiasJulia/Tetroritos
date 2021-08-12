@@ -19,6 +19,7 @@ export const StyledDisplay = styled.div`
     margin:2px;
     margin-bottom:15px;
     font-size: 0.6rem;
+    padding: 15px
   }
 
 `;

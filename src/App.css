@@ -34,8 +34,14 @@
     padding: 0!important;
   }
 
-  .aside div{
+  .d-md-flex{
     display: flex!important;
   }
+}
+
+.rotate{
+  display: block;
+  width: fit-content;
+  transform: rotate(45deg)
 }
 

@@ -18,6 +18,7 @@ import Display from './Display';
 import Stage from './Stage';
 import StartButton from './StartButton';
 import ArrowButton from './ArrowButton';
+import Controls from './Controls';
 
 const Tetris = () => {
     const [dropTime, setDropTime] = useState(null);
@@ -48,20 +49,6 @@ const Tetris = () => {
         setRows(0);
         setLevel(0);
         setGameOver(false);
-
-    }
-
-    const leftTile = () => {
-        movePlayer(-1);
-    }
-
-    const turnTile = () => {
-        playerRotate(stage, 1);
-    }
-
-    const rightTile = () => {
-        //reiniciar
-        movePlayer(1);
     }
 
     const drop = () => {
@@ -75,6 +62,7 @@ const Tetris = () => {
         } else {
             if (player.pos.y < 1) {
                 console.log("Fim!");
+                setDropTime(null)
                 setGameOver(true);
             }
             updatePlayerPos({ x: 0, y: 0, collided: true })
@@ -109,6 +97,23 @@ const Tetris = () => {
         console.log(keyCode)
     }
 
+    const leftTile = () => {
+        movePlayer(-1);
+    }
+
+    const turnTile = () => {
+        playerRotate(stage, 1);
+    }
+
+    const rightTile = () => {
+        movePlayer(1);
+    }
+
+    const dropTile = () => {
+        dropPlayer();
+        setDropTime(1000 / (level + 1) + 200)
+    }
+
     //Função achada na insternet que está nos hooks (useInterval)
     //Recebe uma função para realizar e um tempo de repetição
     useInterval(() => {
@@ -124,31 +129,29 @@ const Tetris = () => {
             <StyledTetris>
                 <Stage stage={stage} />
                 <aside className='aside'>
-                    {gameOver ? (
-                        <div>
-                            <Display gameOver={gameOver} text="game Over" />
-                            <Display gameOver={gameOver} text="Hehe perdeu" />
-                            <Display text={`Score ${score}`} />
-                        </div>
-                    ) : (
-                        <div>
-                            <Display text={`Score ${score}`} />
-                            <Display text={`Rows ${rows}`} />
-                            <Display text={`Level ${level}`} />
-                        </div>
-                    )}
-                    {isMobile ? (
-                        <div>
-                        <ArrowButton callback={leftTile} icon={'<---'} />
-                        <ArrowButton callback={turnTile} icon={'girar'} />
-                        <ArrowButton callback={rightTile} icon={'--->'} />
-                    </div>
+                {isMobile ? (
+                        
+                        <Controls callbacks={[turnTile, rightTile, leftTile, dropTile]}></Controls>
                     ) : (
                         <div>
                         </div>
                     )
 
                     }
+                    {gameOver ? (
+                        <div className='d-md-flex'>
+                            <Display gameOver={gameOver} text="game Over" />
+                            <Display gameOver={gameOver} text="Hehe perdeu" />
+                            <Display text={`Score ${score}`} />
+                        </div>
+                    ) : (
+                        <div className='d-md-flex'>
+                            <Display text={`Score ${score}`} />
+                            <Display text={`Rows ${rows}`} />
+                            <Display text={`Level ${level}`} />
+                        </div>
+                    )}
+                    
                     <StartButton callback={startGame} />
                 </aside>
             </StyledTetris>

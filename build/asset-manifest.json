@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Tetroritos/static/css/main.40e31e00.chunk.css",
-    "main.js": "/Tetroritos/static/js/main.d06a6c35.chunk.js",
-    "main.js.map": "/Tetroritos/static/js/main.d06a6c35.chunk.js.map",
+    "main.css": "/Tetroritos/static/css/main.024f4192.chunk.css",
+    "main.js": "/Tetroritos/static/js/main.bcb4f920.chunk.js",
+    "main.js.map": "/Tetroritos/static/js/main.bcb4f920.chunk.js.map",
     "runtime-main.js": "/Tetroritos/static/js/runtime-main.3226d171.js",
     "runtime-main.js.map": "/Tetroritos/static/js/runtime-main.3226d171.js.map",
     "static/js/2.cbe5fb00.chunk.js": "/Tetroritos/static/js/2.cbe5fb00.chunk.js",
     "static/js/2.cbe5fb00.chunk.js.map": "/Tetroritos/static/js/2.cbe5fb00.chunk.js.map",
     "index.html": "/Tetroritos/index.html",
-    "precache-manifest.381c72c192c7075a445eb7e14e19a692.js": "/Tetroritos/precache-manifest.381c72c192c7075a445eb7e14e19a692.js",
+    "precache-manifest.b920e5c8f8caa3cb776e7e0a266d1d29.js": "/Tetroritos/precache-manifest.b920e5c8f8caa3cb776e7e0a266d1d29.js",
     "service-worker.js": "/Tetroritos/service-worker.js",
-    "static/css/main.40e31e00.chunk.css.map": "/Tetroritos/static/css/main.40e31e00.chunk.css.map",
+    "static/css/main.024f4192.chunk.css.map": "/Tetroritos/static/css/main.024f4192.chunk.css.map",
     "static/js/2.cbe5fb00.chunk.js.LICENSE.txt": "/Tetroritos/static/js/2.cbe5fb00.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Tetroritos/static/media/Pixel-LCD-7.e2897552.woff",
     "static/media/bg.png": "/Tetroritos/static/media/bg.2810fe6b.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.3226d171.js",
     "static/js/2.cbe5fb00.chunk.js",
-    "static/css/main.40e31e00.chunk.css",
-    "static/js/main.d06a6c35.chunk.js"
+    "static/css/main.024f4192.chunk.css",
+    "static/js/main.bcb4f920.chunk.js"
   ]
 }
