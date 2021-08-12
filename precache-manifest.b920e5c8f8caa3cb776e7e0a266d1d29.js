@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a728beaf24bcd2670683fd1a6b93efa9",
+    "revision": "d0c0f4943337900e453c7351125bb529",
     "url": "/Tetroritos/index.html"
   },
   {
-    "revision": "76fb7aaad0c6f43a3086",
-    "url": "/Tetroritos/static/css/main.40e31e00.chunk.css"
+    "revision": "cbe99476159fb8508f59",
+    "url": "/Tetroritos/static/css/main.024f4192.chunk.css"
   },
   {
     "revision": "69a87aef92603bd44653",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tetroritos/static/js/2.cbe5fb00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "76fb7aaad0c6f43a3086",
-    "url": "/Tetroritos/static/js/main.44047b83.chunk.js"
+    "revision": "cbe99476159fb8508f59",
+    "url": "/Tetroritos/static/js/main.bcb4f920.chunk.js"
   },
   {
     "revision": "d4349db48aa9e175040d",
